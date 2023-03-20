@@ -103,7 +103,7 @@ namespace SpecFlowProject2.StepDefinitions
             };
 
             // Serialize the extracted elements  
-            string serializedJson = JsonConvert.SerializeObject(GainChangerInstance);
+            string serializedJson = JsonConvert.SerializeObject(GainChangerInstance, Formatting.Indented);
             // Getting the current project path
             string projPath = Path.GetFullPath(@"..\..\..\");
             Console.WriteLine(projPath);
